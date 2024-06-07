@@ -6,11 +6,15 @@
 
 using col32 = uint32_t;
 
+
 ///values 
+#ifdef DEBUG
+constexpr int WIDTH  = 5;
+constexpr int HEIGHT = 3;
+#else
 constexpr int WIDTH  = 800;
 constexpr int HEIGHT = 600;
-// constexpr int WIDTH  = 5;
-// constexpr int HEIGHT = 3;
+#endif
 
 ///colours 
 namespace colour{
@@ -23,4 +27,7 @@ namespace colour{
 }
 
 std::string default_path = "/home/jk/Programming/cpp/Vornoi/res/res.ppm";
+std::string path_red = "/home/jk/Programming/cpp/Vornoi/res/res_red.ppm";
+std::string path_blue = "/home/jk/Programming/cpp/Vornoi/res/res_blue.ppm";
+std::string path_green = "/home/jk/Programming/cpp/Vornoi/res/res_green.ppm";
 #endif
