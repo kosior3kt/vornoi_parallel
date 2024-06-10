@@ -125,7 +125,10 @@ void add_line(canvas& _im, line& _line){
 
 
 void save_image_as_ppm(const canvas& _im, std::string _path){  
-   std::ofstream file(_path);
+   //std::ofstream file(_path);
+   std::ofstream file;
+   file.open(_path);
+   if(!file.is_open()) std::cout<<"dupa\n";
    file<<"P3\n"<< std::to_string(WIDTH)<<" "<< std::to_string(HEIGHT)<<std::endl;
    file<<255<<std::endl;
    for(auto col : _im)

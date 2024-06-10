@@ -23,7 +23,7 @@ int main(void){
       add_point(image_black, p);
    };
 
-   save_image_as_ppm(image_black);
+   save_image_as_ppm(image_black, "res/res.ppm");
    std::cout<<"i'm still working UwU, but barely...\n";
    return 0;
 }

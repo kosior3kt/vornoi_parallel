@@ -10,7 +10,8 @@
 
 namespace paths
 {
-   static std::string default_path = "/home/jk/Programming/cpp/Vornoi/res/res.ppm";
+   //static std::string default_path = "~/Programming/cpp/Vornoi/res/res.ppm";
+   static std::string default_path = "/Users/jk/Programming/CPP/Vornoi/res";
    static std::string path_red = "/home/jk/Programming/cpp/Vornoi/res/res_red.ppm";
    static std::string path_blue = "/home/jk/Programming/cpp/Vornoi/res/res_blue.ppm";
    static std::string path_green = "/home/jk/Programming/cpp/Vornoi/res/res_green.ppm";
